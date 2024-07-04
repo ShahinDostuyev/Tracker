@@ -1,4 +1,3 @@
-import { Text } from "react-native";
 import { ExpenseContext } from "../../context/expenses-context";
 import { useContext } from "react";
 import { getDateMinusDays } from "../../utils/date";

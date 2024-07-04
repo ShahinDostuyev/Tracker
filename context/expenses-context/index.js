@@ -40,7 +40,7 @@ const Dummy_Expenses = [
 ];
 
 export const ExpenseContext = createContext({
-  expenses: [],
+  expenses: Dummy_Expenses,
   addExpense: ({ description, date, amount }) => {},
   deleteExpense: ({ id }) => {},
   updateExpense: (id, { description, date, amount }) => {},

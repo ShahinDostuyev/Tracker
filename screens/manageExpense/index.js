@@ -1,11 +1,11 @@
 import { useContext, useLayoutEffect } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import IconButton from "../../components/UI/IconButton";
 import { GlobalStyles } from "../../constants/styles";
 import Button from "../../components/UI/IconButton/Button";
 import { ExpenseContext } from "../../context/expenses-context";
 
-function ManageExpenses({ route, navigation }) {
+function ManageExpense({ route, navigation }) {
   const expenseContext = useContext(ExpenseContext);
   const editedExpenseId = route.params?.expenseId;
   const isEditing = !!editedExpenseId;
@@ -59,7 +59,7 @@ function ManageExpenses({ route, navigation }) {
   );
 }
 
-export default ManageExpenses;
+export default ManageExpense;
 
 const styles = StyleSheet.create({
   container: {

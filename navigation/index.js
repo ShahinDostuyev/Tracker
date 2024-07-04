@@ -3,11 +3,10 @@ import RecentExpenses from "../screens/recentExpenses";
 import AllExpenses from "../screens/allExpenses";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import ManageExpenses from "../screens/manageExpenses";
+import ManageExpense from "../screens/manageExpense";
 import { GlobalStyles } from "../constants/styles";
 import { Ionicons } from "@expo/vector-icons";
 import IconButton from "../components/UI/IconButton";
-import { Pressable } from "react-native";
 
 const BottomTabs = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -71,8 +70,8 @@ function Navigator() {
           options={{ headerShown: false }}
         />
         <Stack.Screen
-          name="ManageExpenses"
-          component={ManageExpenses}
+          name="ManageExpense"
+          component={ManageExpense}
           options={{
             presentation: "modal",
           }}
