@@ -24,7 +24,7 @@ function ExpensesOverview() {
             size={24}
             color={tintColor}
             onPress={() => {
-              navigation.navigate("ManageExpenses");
+              navigation.navigate("ManageExpense");
             }}
           />
         ),
